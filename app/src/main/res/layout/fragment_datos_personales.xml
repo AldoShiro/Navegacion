@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosPersonalesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblUsuario"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Nombre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/lblNombUsuario"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="Jessica Gómez Alfaro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toEndOf="@+id/lblUsuario"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <TextView
+            android:id="@+id/lblPoliza"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Poliza"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblUsuario"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <TextView
+            android:id="@+id/lblDescPoliza"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="002041471006"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toEndOf="@+id/lblPoliza"
+            app:layout_constraintTop_toBottomOf="@+id/lblNombUsuario"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <TextView
+            android:id="@+id/lblDomicilio"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Domicilio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblPoliza"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <TextView
+            android:id="@+id/lblEstado"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Estado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDomicilio"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <TextView
+            android:id="@+id/lblMunicipio"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Municipio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblEstado"
+            app:layout_constraintVertical_bias="0.053" />
+
+        <TextView
+            android:id="@+id/lblCalle"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Calle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblMunicipio"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <TextView
+            android:id="@+id/lblDescEstado"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="Puebla"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toEndOf="@+id/lblEstado"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescPoliza"
+            app:layout_constraintVertical_bias="0.179" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="Hidalgo "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toEndOf="@+id/lblCalle"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescMunicipio"
+            app:layout_constraintVertical_bias="0.053" />
+
+        <TextView
+            android:id="@+id/lblDescMunicipio"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="Teziutlan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toEndOf="@+id/lblMunicipio"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescEstado"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/lblTelefonos"
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:text="Numeros Telefónicos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCalle"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <TextView
+            android:id="@+id/lblTelUno"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Tel. 1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTelefonos"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/lblTelDos"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:text="Tel. 2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTelUno"
+            app:layout_constraintVertical_bias="0.155" />
+
+        <TextView
+            android:id="@+id/lblDescTelUno"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="2235851548"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toEndOf="@+id/lblTelUno"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.269" />
+
+        <TextView
+            android:id="@+id/lblDescTelDos"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:text="5648657485"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/lblTelDos"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescTelUno"
+            app:layout_constraintVertical_bias="0.164" />
+
+        <Button
+            android:id="@+id/btnSolicitarServicio"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Solicitar Servicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescTelDos"
+            app:layout_constraintVertical_bias="0.225" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

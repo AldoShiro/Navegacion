@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiciosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblEstatusServicio"
+            android:layout_width="220dp"
+            android:layout_height="38dp"
+            android:text="Estatus Servicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <TextView
+            android:id="@+id/lblDescEstatusServicio"
+            android:layout_width="220dp"
+            android:layout_height="38dp"
+            android:text="PENDIENTE ARRIBO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblEstatusServicio"
+            app:layout_constraintVertical_bias="0.06" />
+
+        <TextView
+            android:id="@+id/lblTipoServicio"
+            android:layout_width="220dp"
+            android:layout_height="38dp"
+            android:text="Tipo de Servicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblDescEstatusServicio"
+            app:layout_constraintVertical_bias="0.131" />
+
+        <TextView
+            android:id="@+id/lblDescTipoServicio"
+            android:layout_width="220dp"
+            android:layout_height="38dp"
+            android:text="CAMBIO DE LLANTA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTipoServicio"
+            app:layout_constraintVertical_bias="0.133" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

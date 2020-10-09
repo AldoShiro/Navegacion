@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.practica.navegacion.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_datosPersonalesFragment"
+            app:destination="@id/datosPersonalesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosPersonalesFragment"
+        android:name="com.practica.navegacion.DatosPersonalesFragment"
+        android:label="fragment_datos_personales"
+        tools:layout="@layout/fragment_datos_personales" >
+        <action
+            android:id="@+id/action_datosPersonalesFragment_to_solicitarServicioFragment"
+            app:destination="@id/solicitarServicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/solicitarServicioFragment"
+        android:name="com.practica.navegacion.SolicitarServicioFragment"
+        android:label="fragment_solicitar_servicio"
+        tools:layout="@layout/fragment_solicitar_servicio" >
+        <action
+            android:id="@+id/action_solicitarServicioFragment_to_elegirProveedorFragment"
+            app:destination="@id/elegirProveedorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviciosFragment"
+        android:name="com.practica.navegacion.ServiciosFragment"
+        android:label="fragment_servicios"
+        tools:layout="@layout/fragment_servicios" >
+        <action
+            android:id="@+id/action_serviciosFragment_to_datosPersonalesFragment"
+            app:destination="@id/datosPersonalesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elegirProveedorFragment"
+        android:name="com.practica.navegacion.ElegirProveedorFragment"
+        android:label="fragment_elegir_proveedor"
+        tools:layout="@layout/fragment_elegir_proveedor" >
+        <action
+            android:id="@+id/action_elegirProveedorFragment_to_serviciosFragment"
+            app:destination="@id/serviciosFragment" />
+    </fragment>
+</navigation>
